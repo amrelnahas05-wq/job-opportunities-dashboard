@@ -71,6 +71,16 @@ pnpm run check
 pnpm run build
 ```
 
+## GitHub Pages deployment
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml`. In the GitHub repository, open **Settings → Pages**, choose **GitHub Actions** as the source, and the workflow will publish the `main` branch build at:
+
+```text
+https://amrelnahas05-wq.github.io/job-opportunities-dashboard/
+```
+
+Set the repository variable `VITE_COLLECTOR_API_URL` under **Settings → Secrets and variables → Actions → Variables** to the public HTTPS URL of the collector service before publishing. This is a URL, not a secret; never add bot or administrator tokens to this frontend repository.
+
 ## Important integration note
 
 The current Telegram collector repository exposes health and file-export routes but does not yet expose the `/public/dashboard` JSON route. The UI is ready for that contract; the collector service will need a read-only API route and appropriate CORS policy before the dashboard displays live records. Keep that route read-only and avoid exposing administrator controls or tokens in the browser.

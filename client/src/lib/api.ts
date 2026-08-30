@@ -24,7 +24,7 @@ export type DashboardData = {
   connected: boolean;
 };
 
-const API_URL = (import.meta.env.VITE_COLLECTOR_API_URL || "").replace(/\/$/, "");
+const API_URL = (import.meta.env.VITE_COLLECTOR_API_URL || "https://telegram-job-collector-production.up.railway.app").replace(/\/$/, "");
 
 function normalizeJobs(payload: unknown): Job[] {
   if (Array.isArray(payload)) return payload as Job[];

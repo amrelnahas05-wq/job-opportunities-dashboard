@@ -21,9 +21,9 @@ import {
 } from "lucide-react";
 import { fetchDashboardData, type DashboardData, type Job } from "@/lib/api";
 
-const LOGO_URL = "/manus-storage/desert-signal-logo_7de8bedd.png";
-const HERO_URL = "/manus-storage/desert-signal-hero_18e4372c.jpg";
-const CONTOURS_URL = "/manus-storage/desert-signal-contours_10b27dc6.jpg";
+const LOGO_URL = "/manus-storage/desert-signal-logo_b1292f20.png";
+const HERO_URL = "/manus-storage/desert-signal-hero_0d2d87fe.jpg";
+const CONTOURS_URL = "/manus-storage/desert-signal-contours_73829eab.jpg";
 
 const categoryLabels: Record<string, string> = {
   technology: "تقنية",
